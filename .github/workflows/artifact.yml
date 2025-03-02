@@ -22,8 +22,7 @@ jobs:
     - name: Download text file step
       uses: actions/download-artifact@v4
       with:
-        name: hello-artifact
-        path: hello-artifact
+        name: artifacts
     
     - name: Show hello artifact contents
-      run: cat hello-artifact/hello.txt
+      run: cat artifacts/hello.txt
