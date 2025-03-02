@@ -21,6 +21,7 @@ jobs:
   
   download:
     runs-on: ubuntu-latest
+    depends-on: [build]
 
     steps:
       - name: Download text file step
